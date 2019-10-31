@@ -6,11 +6,14 @@
 :root {
   --title-font: "McLaren", cursive;
   --main-font: "Roboto", sans-serif;
+  --base-color: #c3a9ff;
 }
 .App {
   display: flex;
   flex-direction: column;
   font-family: var(--main-font);
+  background-image: url("./img/email-pattern.png");
+  height: 100vh;
 }
 
 /*  Header  */
@@ -27,4 +30,73 @@
   font-family: var(--title-font);
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* search */
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0;
+}
+.search__input {
+  flex-basis: 70%;
+  height: 45px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid darkgray;
+  border-radius: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.input:hover,
+.input:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* addTask */
+
+.addTask {
+  margin: 5vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.addTask__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.addTask__input {
+  flex-basis: 80%;
+  height: 45px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.addTask__checkbox-container {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addTask__checkbox {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: red !important;
 }

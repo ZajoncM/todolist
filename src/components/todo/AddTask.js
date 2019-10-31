@@ -8,13 +8,16 @@ const AddTask = () => {
         placeholder="Wpisz nazwę zadania"
         className="addTask__input input"
       />
-      <label htmlFor="checkbox">Ważne</label>
-      <input
-        type="checkbox"
-        className="addTask__checkbox"
-        value=""
-        id="checkbox"
-      />
+
+      <label className="addTask__checkbox-container">
+        Ważne
+        <input
+          type="checkbox"
+          className="addTask__checkbox"
+          value=""
+          id="checkbox"
+        />
+      </label>
       <button type="submit" className="addTask__submit">
         Dodaj zadanie
       </button>
