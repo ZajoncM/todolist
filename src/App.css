@@ -1,22 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --title-font: "McLaren", cursive;
+  --main-font: "Roboto", sans-serif;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: var(--main-font);
 }
 
-.App-link {
-  color: #09d3ac;
+/*  Header  */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 15vh;
+}
+
+.header__title {
+  text-align: center;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-size: 3rem;
 }
