@@ -9,16 +9,11 @@ const AddTask = () => {
         className="addTask__input input"
       />
 
-      <label className="addTask__checkbox-container">
+      <label className="addTask__checkbox-container ">
         Ważne
-        <input
-          type="checkbox"
-          className="addTask__checkbox"
-          value=""
-          id="checkbox"
-        />
+        <input type="checkbox" className="addTask__checkbox" />
       </label>
-      <button type="submit" className="addTask__submit">
+      <button type="submit" className="addTask__submit btn btn-primary">
         Dodaj zadanie
       </button>
     </form>
