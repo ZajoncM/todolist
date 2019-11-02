@@ -3,7 +3,9 @@ import types from "./types";
 const InitialTask = {
   tasks: [
     { name: "Zadanie pierwsze", id: 1, important: false },
-    { name: "Zadanie drugie ważne", id: 2, important: true }
+    { name: "Zadanie drugie ważne", id: 2, important: true },
+    { name: "Umyć naczynia", id: 3, important: false },
+    { name: "Zrobić zakupy", id: 4, important: false }
   ]
 };
 

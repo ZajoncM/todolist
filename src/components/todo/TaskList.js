@@ -16,10 +16,14 @@ const TaskList = ({ tasks, del }) => {
             <th scope="col">Usuń</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="taskList__body">
           {tasks.map(task =>
             task.important ? (
-              <tr className="tasklist__task table-danger" key={task.id}>
+              <tr
+                className="tasklist__task table-danger"
+                key={task.id}
+                name={task.name}
+              >
                 <th scope="row">{task.id}</th>
                 <td>{task.name}</td>
                 <td>Ważne!!!</td>
@@ -33,7 +37,7 @@ const TaskList = ({ tasks, del }) => {
                 </td>
               </tr>
             ) : (
-              <tr className="tasklist__task" key={task.id}>
+              <tr className="tasklist__task" key={task.id} name={task.name}>
                 <th scope="row">{task.id}</th>
                 <td>{task.name}</td>
                 <td></td>
