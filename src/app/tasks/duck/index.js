@@ -1,5 +1,5 @@
 import tasksReducer from "./reducers";
 
-export { default as tastTypes } from "./types";
-export { default as tastActions } from "./actions";
+export { default as taskActions } from "./actions";
+export { default as taskTypes } from "./types";
 export default tasksReducer;

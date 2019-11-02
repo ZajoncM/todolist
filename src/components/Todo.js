@@ -9,11 +9,11 @@ const Todo = () => {
       <section className="search">
         <Search />
       </section>
-      <section className="taskList">
-        <TaskList />
-      </section>
       <section className="addTask">
         <AddTask />
+      </section>
+      <section className="taskList">
+        <TaskList />
       </section>
     </>
   );
